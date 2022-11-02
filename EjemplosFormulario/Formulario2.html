@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <form id="formulario" method="post" action="">
+    <label for="programa">Programa seleccionado</label> <br/>
+        <select id="programa" name="programa">
+            <optgroup label="Sistemas Operativos">
+                <option value="Windows"
+                    selected="selected">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linux</option>
+                <option value="Other">Otro</option>
+            </optgroup>
+            <optgroup label="Navegadores">
+                <option value="Internet Explorer"
+                selected="selected">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Safari">Safari</option>
+                <option value="Opera">Opera</option>
+                <option value="Other">Otro</option>
+            </optgroup>
+        </select>
+        <br>
+            <input type="checkbox" name="lista"
+                checked="checked">
+            <label>Sí, deseo ser incluído en la lista de correo.</label>
+        ¿Cuál es tu animal preferido?
+        <br/>
+            <input type="radio" name="Animal" value="Gato"
+                CHECKED =”checked” /> 
+                Gato
+            <input type="radio" name="Animal" value="Perro"/>
+                Perro
+            <input type="radio" name="Animal" value="Canario" />
+                Canario
+        <br>
+        <input type="reset" name="limpar" value="Borrar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form enctype="text/plain" action="mailto:tomasgt1996@gmail.com" method="post">
+        <label>Nombre</label><input type="text" name="nombre" size="10" maxlength="5" readonly="readonly">
+        <br>
+        Apellido:<input type="text" name="apellido">
+        <br>
+        <br>
+        Contraseña:<input type="password" name="contraseña">
+        <br>
+        Observaciones:<textarea cols="33" rows="7" name="observaciones"></textarea>
+        <br>
+        <br>
+        ¿Cuál es tu animal preferido?
+        <select name="Animal Preferido" multiple size="2">
+            <option value="Gato">Gato</option>
+            <option value="Perro" selected="selected">Perro</option>
+            <option value="León">León</option> 
+            <option value="Águila">Águila</option>
+        <br>
+        <br>
+            <label for="programa">Programa seleccionado</label> <br/>
+            <select id="programa" name="programa">
+                <optgroup label="Sistemas Operativos">
+                    <option value="Windows"
+                        selected="selected">Windows</option>
+                    <option value="Mac">Mac</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Other">Otro</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option value="Internet Explorer"
+                    selected="selected">Internet Explorer</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Other">Otro</option>
+                </optgroup>
+            </select>
+        <br>
+                <input type="checkbox" name="lista"
+                    checked="checked">
+                <label>Sí, deseo ser incluído en la lista de correo.</label>
+            ¿Cuál es tu animal preferido?
+        <br>
+                <input type="radio" name="Animal" value="Gato"
+                    CHECKED =”checked” /> 
+                    Gato
+                <input type="radio" name="Animal" value="Perro"/>
+                    Perro
+                <input type="radio" name="Animal" value="Canario" />
+                    Canario
+        <br>
+                <input type="submit" name="enviar" value="Enviar">
+                <input type="reset" name="limpar" value="Borrar">
+                <button name="resetear" type="reset">Resetear</button>
+        <br>
+        </select>
+    </form>
+</body>
+</html>
